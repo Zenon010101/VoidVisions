@@ -1,13 +1,21 @@
-#grad1 {
+body {
         height: 3000px;
-        background-color: violet; /* For browsers that do not support gradients */
-        background-image: linear-gradient(to right, lightblue , violet);
+       
+        background-image: url("VoidBg.png");
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-attachment: fixed;
 
       }
 
-      .topnav {
+    .topnav {
         background-color: #333;
         overflow: hidden;
+        justify-content: center; /* Center the links */
+        position: fixed; 
+        z-index: 1000;
+      
     }
     
     .topnav a {
@@ -32,4 +40,36 @@
     #content {
         padding: 20px;
     }
+p.a{
     
+    position: fixed
+    
+
+}
+
+
+
+img.a {
+    transition: transform 0.1s ease-in-out; /* Smooth movement */
+}
+img.a:hover {
+    transform: translate(10px, 10px); /* Moves 10px right and 10px down */
+}
+img.b{
+    transition: transform 0.1s ease-in-out;
+}
+img.b:hover{
+    transform: translate(10px, 10px);
+}
+img.Facebook {
+    transition: transform 0.1s ease-in-out; 
+}
+img.Facebook:hover{
+    transform: translate(5px, 5px);
+}
+img.Instagram{
+    transition: transform 0.1s ease-in-out; 
+}
+img.Instagram:hover{
+    transform: translate(5px, 5px);
+}
