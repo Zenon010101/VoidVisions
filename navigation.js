@@ -16,10 +16,16 @@ const pages = {
         <center>
         <img class="b" src="Void.png" usemap="#VoidVision" alt="VoidVision">
         </center>
-       
-        
-  
     `,
+    samples: `
+    <center>
+        <h1>Samples</h1>
+        <p>Here are some examples of our work:</p>
+        <img src="sample1.png" alt="Sample 1" style="width: 300px; height: auto;">
+        <img src="sample2.png" alt="Sample 2" style="width: 300px; height: auto;">
+    </center>
+    `,
+  
     contact: `
         <center>
             <h1>Contact Us</h1>
@@ -30,30 +36,26 @@ const pages = {
     `,
     about: `
         <center>
-            <h1>About VoidVisuals</h1>
+            <h1>About VoidVisions</h1>
             <p>I'm Zenon. The creator of VoidVisuals. I'm a student freelance editor.
             <br>
             <br>
             Your clips, our Vision.</p>
             <br>
-            <h1> This is how VoidVisuals was created. </h1>
+            <h1> This is how VoidVisions was created. </h1>
             <br>
+            <a href="https://www.facebook.com/share/v/15GTCUNisS/"> <img class="LinkVideo"src="VoidVision Logo.png" alt="Logo" style="width: 100px;height:100px;"></a>
             
-            <p> If you are interested, watch the video. </p>
-            <video width="500" height="250" controls>
-            <source src="THE CREATION OF VOID VISION.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-
-           
-        </video>
-
-        
         </center>
-        <h1>Visit my links</h1>
-        <a href="https://www.facebook.com/VoidVisionsPh"><img class="Facebook" src="fb.png" alt="Facebook" style="width:42px;height:42px;"> </a> 
         <br>
         <br>
-        <a href="https://www.instagram.com/voidvisionsph?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img class="Instagram" src="ig.png" alt="Instagram" style="width:42px;height:42px;"> </a> 
+        <h1><strong> Visit my links </strong></h1>
+        <ul>
+            <li><a href="https://www.facebook.com/VoidVisionsPh"><img class="Facebook" src="fb.png" alt="Facebook" style="width:42px;height:42px;"> </a>Facebook </li>
+            <br>
+            <li><a href="https://www.instagram.com/voidvisionsph?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img class="Instagram" src="ig.png" alt="Instagram" style="width:42px;height:42px;"> </a> Instagram</li>
+        
+        </ul>
     `
 };
 
