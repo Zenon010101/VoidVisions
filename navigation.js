@@ -14,17 +14,13 @@ const pages = {
         <h1> This is VOID</h1>
         </center>
         <center>
-        <img class="b" src="Void.png" usemap="#VoidVision" alt="VoidVision">
-        </center>
+        <img class="b" id="voidImage" src="Void.png" usemap="#VoidVision" alt="VoidVision">
+        <br><br>
+        
+       
+        
     `,
-    samples: `
-    <center>
-        <h1>Samples</h1>
-        <p>Here are some examples of our work:</p>
-        <img src="sample1.png" alt="Sample 1" style="width: 300px; height: auto;">
-        <img src="sample2.png" alt="Sample 2" style="width: 300px; height: auto;">
-    </center>
-    `,
+    
   
     contact: `
         <center>
@@ -58,6 +54,7 @@ const pages = {
         </ul>
     `
 };
+
 
 // handling navigation
 function navigate(page) {
