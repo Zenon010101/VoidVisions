@@ -38,7 +38,7 @@ const pages = {
             <source src="Somebody.mp4" type="video/mp4">
             Your browser does not support the video tag.  
         </video>
-        <p><strong>==================================================================================================================================</strong></p>
+        
         <video id="iwantus">
             <source src="i want us by Adinpuffy x Ishida x Bookie x Zenon.mp4" type="video/mp4">
             Your browser does not support the video tag.  
