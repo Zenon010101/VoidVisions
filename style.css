@@ -75,6 +75,9 @@ img.a{
 }
 img.b{
     transition: transform 0.1s ease-in-out;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
 }
 img.b:hover{
     transform: translate(10px, 10px);
