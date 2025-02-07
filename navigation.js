@@ -6,8 +6,8 @@ const pages = {
     </div></div>
         <center>
         <br>
-            <h1>Welcome to</h1>
-             <img class="a" src="VOID VISUALS.png" usemap="#VoidVision" alt="VoidVision">
+        <h1>Welcome to</h1>
+        <img class="a" src="VOID VISUALS.png" usemap="#VoidVision" alt="VoidVision">
         </center>
         <br> 
         <center>
@@ -16,6 +16,35 @@ const pages = {
         <center>
         <img class="b" id="voidImage" src="Void.png" usemap="#VoidVision" alt="VoidVision">
         <br><br>
+        <h1> Video samples </h1>
+        </center>
+        <video id="birthday" muted>
+            <source src="Birthday - Funeral.mp4" type="video/mp4">
+            Your browser does not support the video tag.    
+        </video>
+        <video id="SololevelingMV">
+            <source src="Solo leveling MV.mp4" type="video/mp4">
+            Your browser does not support the video tag.  
+        </video>
+        <video id="itGetsWorse">
+            <source src="it gets worse.mp4" type="video/mp4">
+            Your browser does not support the video tag.  
+        </video>
+        <video id="Painless">
+            <source src="Painless.mp4" type="video/mp4">
+            Your browser does not support the video tag.  
+        </video>
+        <video id="Somebody">
+            <source src="Somebody.mp4" type="video/mp4">
+            Your browser does not support the video tag.  
+        </video>
+        <p><strong>==================================================================================================================================</strong></p>
+        <video id="iwantus">
+            <source src="i want us by Adinpuffy x Ishida x Bookie x Zenon.mp4" type="video/mp4">
+            Your browser does not support the video tag.  
+        </video>
+
+
         
        
         
@@ -77,5 +106,32 @@ function updateActiveLink(activePage) {
     });
 }
 
+
 // Load default page 
 window.onload = () => navigate('home');
+
+
+// hovering play and hovering out pause
+document.querySelectorAll("video").forEach(video => {
+    // Ensure videos are initially muted to allow autoplay
+    video.muted = true;
+
+    // Play the video when hovered, unmute it as well
+    video.addEventListener("mouseenter", () => {
+        console.log("Hovered over video: ", video.id);
+        video.muted = false;  // Unmute when hovered
+        video.play().then(() => {
+            console.log("Playing video: ", video.id);
+        }).catch((err) => {
+            console.error("Error playing video: ", video.id, err);  // Error handling
+        });
+    });
+
+    // Pause the video and mute it again when mouse leaves
+    video.addEventListener("mouseleave", () => {
+        console.log("Mouse left video: ", video.id);
+        video.pause();  // Pause video
+        video.currentTime = 0;  // Optionally reset to the start
+        video.muted = true;  // Mute it when paused
+    });
+});

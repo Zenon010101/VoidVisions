@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     position: relative;
@@ -55,6 +58,7 @@ body::before {
     #content {
         padding: 20px;
     }
+    
 p.a{
     
     position: fixed
@@ -64,12 +68,11 @@ p.a{
 
 
 
-img.a {
-    transition: transform 0.1s ease-in-out; /* Smooth movement */
-    
-}
-img.a:hover {
-    transform: translate(10px, 10px); /* Moves 10px right and 10px down */
+img.a{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 img.b{
     transition: transform 0.1s ease-in-out;
@@ -96,7 +99,18 @@ img.LinkVideo{
 }
 
 
-
 #voidImage:hover {
     content: url('VoidsaidHi.png'); 
+}
+video{
+    filter: blur(5px);
+    transition: filter 0.3s ease-in-out;
+    transition: filter 0.5s ease-in-out, transform 0.5s ease-in-out;
+    width: 200px;
+    height: 220px;
+    margin-bottom: 10px;
+}
+video:hover {
+    filter: blur(0px); /* Remove blur on hover */
+    transform: scale(1.2);
 }
